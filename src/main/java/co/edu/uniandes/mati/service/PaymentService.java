@@ -45,7 +45,7 @@ public class PaymentService {
     @POST
     public Response setUpService(EnableService setUpService) {
         isEnabled = setUpService.getIsActived();
-        return Response.ok(isEnabled).build();
+        return Response.ok("Service now is: "+isEnabled).build();
     }
 
 }
